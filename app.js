@@ -11,7 +11,7 @@ function displayBooks() {
     const bookAuthor = document.createElement('h3');
     const removeBtn = document.createElement('button');
     removeBtn.innerText = 'Remove';
-    const line = document.createElement('hr')
+    const line = document.createElement('hr');
     removeBtn.classList.add('delete');
 
     bookName.innerHTML = `${book.bookTitle}`;
