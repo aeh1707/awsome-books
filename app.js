@@ -11,13 +11,14 @@ function displayBooks() {
     const bookAuthor = document.createElement('h3');
     const removeBtn = document.createElement('button');
     removeBtn.innerText = 'Remove';
+    const line = document.createElement('hr')
     removeBtn.classList.add('delete');
 
     bookName.innerHTML = `${book.bookTitle}`;
     bookAuthor.innerHTML = `${book.bookAuthor}`;
 
     outputField.append(bookListDiv);
-    bookListDiv.append(bookName, bookAuthor, removeBtn);
+    bookListDiv.append(bookName, bookAuthor, removeBtn, line);
 
     removeBtn.addEventListener('click', () => {
       bookList = bookList.filter((t) => t !== book);
