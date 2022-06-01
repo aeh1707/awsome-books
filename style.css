@@ -1,3 +1,35 @@
+.heading-sec {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#listviewMain {
+  visibility: hidden;
+  position: absolute;
+  margin-left: 430px;
+  margin-top: 20px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-list {
+  margin-left: 20px;
+  list-style: none;
+}
+
+.last {
+  color: blue;
+}
+
+.nav-head {
+  display: flex;
+}
+
 .book-cont-wrap {
   display: flex;
   flex-direction: row;
@@ -42,5 +74,42 @@
 }
 
 .addBtn {
-  margin-left: 99px;
+  margin-left: 165px;
+  width: 58px;
+}
+
+.contact-sec {
+  text-align: center;
+  margin-top: -90px;
+  visibility: hidden;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+.show {
+  display: block;
+}
+
+input {
+  width: 228px;
+}
+
+#form-div {
+  margin-top: 102px;
+  visibility: hidden;
+}
+
+.copy-right-detail {
+  margin-left: 245px;
+}
+
+.footer-sec {
+  margin-top: 17%;
+}
+
+.contact-info {
+  text-transform: uppercase;
+  font-weight: bold;
 }
