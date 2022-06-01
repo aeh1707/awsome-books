@@ -109,3 +109,34 @@ document.querySelector('#outputField').addEventListener('click', (e) => {
   //    remove book for storage
   Store.removeBook(e.target.parentElement.parentElement.firstChild.firstChild.textContent);
 });
+
+// navigation script
+const navOpenBtn = document.querySelector("#hambugerBtn");
+const navCloseBtn = document.querySelector("#btnClose");
+
+
+const listview = document.getElementById('list');
+const formView = document.getElementById('addNew');
+const contactView = document.getElementById('contact');
+
+
+listview.addEventListener('click', function(){
+document.getElementById('listviewMain').style.visibility = "visible";
+ document.getElementById("form-div").style.visibility = "hidden";
+ document.getElementById("contact-sec").style.visibility = "hidden";
+
+});
+
+formView.addEventListener('click', function(){
+    document.getElementById('form-div').style.visibility = "visible";
+    document.getElementById("contact-sec").style.visibility = "hidden";
+    document.getElementById("listviewMain").style.visibility = "hidden";
+   
+   });
+
+   contactView.addEventListener('click', function(){
+    document.getElementById('contact-sec').style.visibility = "visible";
+    document.getElementById("form-div").style.visibility = "hidden";
+    document.getElementById("listviewMain").style.visibility = "hidden";
+   
+   })

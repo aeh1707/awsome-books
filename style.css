@@ -1,46 +1,122 @@
-.book-cont-wrap {
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-  margin-left: 2px;
-}
-
-#outputField {
-  display: flex;
-  flex-direction: column;
-  width: 483px;
-  margin: 0 auto;
-  margin-top: 50px;
-  border: 1px solid blue;
-}
-
-.list-wrapper {
+.heading-sec{
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
-  border: 5px solid #fff;
-  height: 30px;
-  background-color: rgb(212, 212, 245);
+  justify-content: space-around;
 }
 
-.book-list-style {
+#listviewMain{
+  visibility: hidden;
+  position: absolute;
+  margin-left: 430px;
+  margin-top: 20px;
+}
+
+.nav-link{
+  text-decoration: none;
+  color: black;
+}
+
+
+.nav-list {
+  margin-left: 20px;
+  list-style: none;
+  
+}
+
+.last{
+  color: blue;
+}
+
+.nav-head {
+  display: flex;
+}
+
+.book-cont-wrap {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-left: 2px;
+   
+  }
+
+  #outputField {
+    display: flex;
+    flex-direction: column;
+    width: 483px;
+    margin: 0 auto;
+    margin-top: 50px;
+    border: 1px solid blue;
+   
+  
+  }
+
+  .list-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+     border: 5px solid #fff; 
+  
+    height: 30px;
+    background-color: rgb(212, 212, 245);
+  }
+
+  .book-list-style {
   margin-right: 6px;
-}
+  }
 
-.list-cont-style {
-  font-size: 17px;
-}
+  .list-cont-style {
+    font-size: 17px;
+  }
 
-.heading {
-  text-align: center;
-  margin-top: 70px;
-}
+  .heading {
+    text-align: center;
+    margin-top: 70px;
+  }
 
-.bookForm {
-  text-align: center;
-}
+  .bookForm {
+    text-align: center;
+  }
 
-.addBtn {
-  margin-left: 99px;
-}
+  .addBtn {
+    margin-left: 165px;
+    width: 58px;
+  }
+  
+  .contact-sec {
+    text-align: center;
+    margin-top: -90px;
+    visibility: hidden;
+  }
+
+
+  .hide {
+    visibility: hidden;
+  }
+  
+  .show {
+    display: block;
+  }
+
+  input{
+    width: 228px;
+  }
+
+  #form-div {
+    margin-top: 102px;
+    visibility: hidden;
+  }
+
+  .copy-right-detail {
+    margin-left: 245px;
+  }
+
+  .footer-sec{
+    margin-top: 17%;
+  }
+
+  .contact-info {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
