@@ -1,8 +1,38 @@
 // book class
-class Book {
+class Book { // eslint-disable-line
   constructor(title, author) {
     this.title = title;
     this.author = author;
+  }
+}
+
+// storage class
+class Store {
+  static getBook() {
+    let books;
+    if (localStorage.getItem('books') === null) {
+      books = [];
+    } else {
+      books = JSON.parse(localStorage.getItem('books'));
+    }
+    return books;
+  }
+
+  static addBook(book) {
+    const books = Store.getBook();
+    books.push(book);
+    localStorage.setItem('books', JSON.stringify(books));
+  }
+
+  static removeBook(title) {
+    const books = Store.getBook();
+    books.forEach((book, index) => {
+      if (book.title === title) {
+        books.splice(index, 1);
+      }
+    });
+
+    localStorage.setItem('books', JSON.stringify(books));
   }
 }
 
@@ -79,33 +109,3 @@ document.querySelector('#outputField').addEventListener('click', (e) => {
   //    remove book for storage
   Store.removeBook(e.target.parentElement.parentElement.firstChild.firstChild.textContent);
 });
-
-// storage class
-class Store {
-  static getBook() {
-    let books;
-    if (localStorage.getItem('books') === null) {
-      books = [];
-    } else {
-      books = JSON.parse(localStorage.getItem('books'));
-    }
-    return books;
-  }
-
-  static addBook(book) {
-    const books = Store.getBook();
-    books.push(book);
-    localStorage.setItem('books', JSON.stringify(books));
-  }
-
-  static removeBook(title) {
-    const books = Store.getBook();
-    books.forEach((book, index) => {
-      if (book.title === title) {
-        books.splice(index, 1);
-      }
-    });
-
-    localStorage.setItem('books', JSON.stringify(books));
-  }
-}
