@@ -2,7 +2,7 @@
 
 # Project Name
 
-> Description the project.
+> A library web app to managae your small collection of books, made with HTML, CSS, JS, this app has a feeling of a native app since the DOM is populated using the DOM API,so no reload of the page is necerssary.
 
 
 ## Built With
